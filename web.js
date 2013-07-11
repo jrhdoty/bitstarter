@@ -4,8 +4,8 @@ var express = require('express');
 
 var app = express.createServer(express.logger());
 
-//var output = fs.readFileSync('Index.html');
-//var str = output.toString();
+var output = fs.readFileSync('Index.html');
+var str = output.toString();
 
 app.get('/', function(request, response) {
   response.send("this is a test");
